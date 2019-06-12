@@ -1,34 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @primary : #17805b;
-@body:#054150;
-@white:#fafafa;
+@body: #054150;
+@white: #fafafa;
 
 
 h1 {
-  color:@white;
+  color: @white;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  margin:0 auto;
+  margin: 10px;
   background: @primary;
   text-align: center;
-  width:200px;
+  width: 200px;
   cursor: pointer;
-  box-shadow:0px 6px 0px darken(@primary,7%);
-  &:hover{
-    box-shadow:0px 6px 0px darken(@primary,4%);
+  box-shadow: 0px 6px 0px darken(@primary, 7%);
+
+  &:hover {
+    box-shadow: 0px 6px 0px darken(@primary, 4%);
   }
 }
 
-.container{
+.container {
   font-family: 'Pacifico', cursive;
   color: @body;
   font-size: 14px;
   padding: 20px;
-  p{
+
+  p {
     font-size: 12px;
-    color:@primary;
+    color: @primary;
     text-align: left;
   }
+  img{
+    margin:0, auto;
+  }
 
+}
+
+nav {
+  margin-top: 20px;
+  padding: 20px;
+  background: @primary;
+  border-bottom: 5px solid darken(@primary, 5%);
+  .page-title{
+    border:2px solid @primary;
+    color:@primary;
+    padding: 5px;
+    background:@white;
+    font-weight: bold;
+  }
+  a {
+    color: @white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    &:hover {
+      border-bottom: 5px solid darken(@primary, 10%);
+    }
+  }
+}
+
+footer{
+  background: @primary;
+  color:@white;
+  padding: 2px 10px;
+  font-family: 'Pacifico', cursive;
+  border-top: 5px solid darken(@primary, 10%);
 }
